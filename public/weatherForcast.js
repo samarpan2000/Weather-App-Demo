@@ -128,7 +128,7 @@ let getData = async (dataLoc) => {
 let getForecast = async (city) => {
   const day = 6;
   let response = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=84243e6ecb7e4f30a71190046242702&q=${city}&days=${day}`
+    `https://api.weatherapi.com/v1/forecast.json?key=84243e6ecb7e4f30a71190046242702&q=${city}&days=${day}`
   );
   let dataForecast = await response.json();
   console.log(dataForecast);
