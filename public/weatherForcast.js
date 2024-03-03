@@ -119,7 +119,7 @@ const Main = async () => {
 
 let getData = async (dataLoc) => {
   let x = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=84243e6ecb7e4f30a71190046242702&q=${dataLoc}`
+    `https://api.weatherapi.com/v1/current.json?key=84243e6ecb7e4f30a71190046242702&q=${dataLoc}`
   );
   let data = await x.json();
   console.log(data);
