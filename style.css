@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./images/landingpage3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        
+        font-family: "Roboto", sans-serif;
+        /* font-weight: 400;
+        font-style: normal; */
+}
+/* CONT */
+.cont{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    position:relative;
+
+}
+/* END CONT */
+/* BLUR CONTAINER */
+.blur-cont{
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(2px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    z-index: -1;
+
+}
+/* END BLUR CONT(CHILD OF CONTAINER) */
+/* NAV */
+.nav-cont{
+    /* background-color: beige; */
+    /* padding-left: ; */
+    width: 100%;
+    /* height: 100%; */
+}
+
+.nav-cont a{
+    margin-right: 10px;
+    /* background-color: aqua; */
+    text-decoration: none;
+    color: rgb(250, 246, 246);
+    /* margin:0; */
+    text-shadow: 2px 2px 5px rgb(6, 6, 6);
+    font-size: 18px;
+    /* transition: 0.2s ease-in-out; */
+}
+.nav-cont a:hover{
+    border-bottom: 3px solid white;
+    cursor: pointer;
+    text-shadow: 2px 2px 18px white;
+}
+/* END OF NAV */
+/* main */
+h1,p{
+    /* background-color: aqua; */
+    color: rgb(251, 248, 248);
+    text-shadow: 4px 4px 5px rgb(9, 9, 9);
+}
+.main-cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background-color: blueviolet; */
+}
+.text-cont{
+    /* background-color: aliceblue; */
+    /* display: inline-block; */
+    width: 70%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.text-cont p{
+    font-size: 18px;
+}
+.text-cont a button{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    background-color: rgb(19, 80, 84);
+    box-shadow: 4px 4px 18px rgb(181, 243, 243);
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+}
+.text-cont a button:hover{
+    /* background-color:rgb(12, 45, 58) ; */
+    background-color: rgb(8, 165, 100);
+    cursor: pointer;
+    box-shadow: 2px 2px 28px rgb(226, 229, 229);
+}
+
+.img-cont{
+    width: 30%;
+    /* background-color: blue; */
+    position: relative;
+
+}
+.img-cont img{
+    min-width: 70px;
+    width: 100%;
+    /* box-shadow: 2px 2px 20px white; */
+    border-radius: 100px;
+}
+.blur-img-cont{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        /* background: rgba(255, 255, 255, 0.2); */
+        /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+        -webkit-backdrop-filter: blur(1px);
+        backdrop-filter: blur(1px);
+        /* border: 2px solid rgba(255, 255, 255, 0.3); */
+        border-radius: 100px;
+        z-index: -1;
+
+}
+
+/* end of main */
+/* footer */
+.footer-cont{
+    width: 100%;
+    height:10vh;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px -1px 4px black;
+    font-size: 16px;
+}
+
+/* footer */
+/* responsiveness */
+@media only screen and (min-width:769px) and (max-width: 1023px) {
+    .cont {
+        width: 100%;
+        height: 100%;
+        /* display */
+    }
+
+    /* END CONT */
+    /* NAV */
+    .nav-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .nav-cont a {
+        margin: 10px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .nav-cont a:hover {
+        border-bottom: none;
+    }
+
+    /* END OF NAV */
+    /* main */
+
+    .text-cont {
+        /* background-color: rgb(23, 106, 180); */
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-cont h1 {
+        font-size: 30px;
+    }
+
+    .text-cont p {
+        font-size: 18px;
+    }
+
+    .text-cont a button {
+        font-size: 10px;
+    }
+
+    .bottom {
+        margin: 15px;
+    }
+
+    .img-cont {
+        /* background-color: aqua; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 50%; */
+    }
+
+    .img-cont img {
+        min-width: 70px;
+        width: 300px;
+
+        /* box-shadow: 2px 2px 20px white; */
+        border-radius: 100px;
+    }
+
+    /* end of main */
+    /* footer */
+}
+@media only screen and (max-width: 768px){
+    .cont {
+            width: 100%;
+            height: 100%;
+        }
+    
+        /* END CONT */
+        /* NAV */
+        .nav-cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-color: beige; */
+        }
+    
+        .nav-cont a {
+            margin: 10px;
+            transition: 0.2s ease-in-out;
+        }
+    
+        .nav-cont a:hover {
+            border-bottom: none;
+        }
+    
+        /* END OF NAV */
+        /* main */
+        .main-cont {
+            /* width: 100%; */
+            /* height: 100%; */
+            /* background-color: blueviolet; */
+            /* padding: 2px; */
+            flex-direction: column;
+        }
+    
+        .text-cont {
+            /* background-color: aliceblue; */
+            width: 100%;
+            height: 100%;
+        }
+        .text-cont h1{
+            font-size: 26px;
+        }
+        .text-cont p{
+            font-size: 16px;
+        }
+        .text-cont a{
+            /* background-color: aqua; */
+            width: 100%;
+            /* text-align: center; */
+        }
+        .text-cont a button{
+            font-size: 10px;
+            width: 100%;
+        }
+        .bottom{
+            margin: 15px;
+        }
+        .img-cont{
+            /* background-color: aqua; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 50%; */
+        }
+        .img-cont img {
+            min-width: 70px;
+            width: 300px;
+
+            /* box-shadow: 2px 2px 20px white; */
+            border-radius: 100px;
+        }
+    
+        /* end of main */
+        /* footer */
+
+}

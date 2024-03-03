@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./weatherForcast.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <div class="main-cont">
+      <div class="left">
+        <!-- top -->
+        <div class="top common">
+          <p class="city-name" id="city-name-top"></p>
+          <p class="current-date" id="curr-date"></p>
+        </div>
+        <!-- end top -->
+        <!-- mid -->
+        <div class="mid">
+          <div class="mid-left-temp common">
+            <p class="current-temperature" id="current-temperature"></p>
+            <br />
+            <p class="weather-condition" id="weather-condition"></p>
+          </div>
+          <div class="mid-right common">
+            <div class="gust-l">
+              <p class="h">Gust:&nbsp;</p>
+              <i class="fa-solid fa-wind"></i>
+              <p class="gust" id="gust"></p>
+            </div>
+            <br />
+            <div class="humidity-r">
+              <p class="h">Humidity:&nbsp;</p>
+              <i class="fa-solid fa-droplet"></i>
+              <p class="humidity" id="humidity"></p>
+            </div>
+          </div>
+        </div>
+        <div class="five-days-forecast-cont common">
+          <div class="box-0 box">
+            <p class="day-name-0 dn"></p>
+            <p class="curr-temp-0 ct"></p>
+            <p class="weather-cond-0 wc"></p>
+          </div>
+          <div class="box-1 box">
+            <p class="day-name-1 dn"></p>
+            <p class="curr-temp-1 ct"></p>
+            <p class="weather-cond-1 wc"></p>
+          </div>
+          <div class="box-2 box">
+            <p class="day-name-2 dn"></p>
+            <p class="curr-temp-2 ct"></p>
+            <p class="weather-cond-2 wc"></p>
+          </div>
+          <div class="box-3 box">
+            <p class="day-name-3 dn"></p>
+            <p class="curr-temp-3 ct"></p>
+            <p class="weather-cond-3 wc"></p>
+          </div>
+
+          <div class="box-4 box">
+            <p class="day-name-4 dn"></p>
+            <p class="curr-temp-4 ct"></p>
+            <p class="weather-cond-4 wc"></p>
+          </div>
+
+          <div class="box-5 box">
+            <p class="day-name-5 dn"></p>
+            <p class="curr-temp-5 ct"></p>
+            <p class="weather-cond-5 wc"></p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="wish-cont common">
+          <p class="wish" id="wish"></p>
+          <br />
+          <p class="time-now" id="time-now"></p>
+        </div>
+        <div class="details common">
+          <div class="feels-like-c">
+            <p class="f-like">Feels Like:&nbsp;</p>
+            <p class="feels-like" id="feels-like"></p>
+          </div>
+          <div class="aiq">
+            <p class="visib">Visibility:&nbsp;</p>
+            <p class="visibility" id="visibility"></p>
+          </div>
+        </div>
+        <div class="search common">
+          <input
+            id="search-loc"
+            type="text"
+            title="Search Temperature"
+            placeholder="Enter City to be Searched"
+            autocomplete="off"
+            required
+          />
+          <button id="search-btn">Search</button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/2fde02e7c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./weatherForcast.js"></script>
+  </body>
+</html>
